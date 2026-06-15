@@ -3,7 +3,6 @@ const choices = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
 
-
 function playRound(humanChoice, computerChoice){
     if(humanChoice === "rock"){
         if(computerChoice === "rock") return "Tie!";
@@ -27,7 +26,7 @@ function playRound(humanChoice, computerChoice){
         }
     }
     else if (humanChoice === "scissors"){
-        if(computerChoices === "scissors") return "Tie!";
+        if(computerChoice === "scissors") return "Tie!";
         else if(computerChoice === "rock") {
             computerChoice++;
             return "Computer choose rock. You choosed scissors you lose!";
@@ -65,8 +64,5 @@ function getHumanChoice(){
 
 function validateChoice(choice) { return choices.includes(choice); }
 
-
 // getHumanChoice();
-playGame(5);
-
-
+playGame(5); 
