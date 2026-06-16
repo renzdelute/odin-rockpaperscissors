@@ -11,29 +11,29 @@ function playRound(humanChoice, computerChoice){
             return "Computer choose paper. You Lose!";
         } else if (computerChoice === 'scissors') {
             humanScore++;
-            return "Computer choose scissors. You Win!";
+            console.log("Computer choose scissors. You Win!");
         }
     } 
     else if (humanChoice === "paper"){
         if (computerChoice == "paper") return "Tie!";
         else if (computerChoice === "scissors"){
             computerScore++;
-            return "Computer choose scissors. You choosed paper you lose!";
+            console.log("Computer choose scissors. You choosed paper you lose!");
         }
         else if(computerChoice === "rock"){
             humanScore++;
-            return "Computer choose rock. You choosed paper you win!";
+            console.log("Computer choose rock. You choosed paper you win!");
         }
     }
     else if (humanChoice === "scissors"){
         if(computerChoice === "scissors") return "Tie!";
         else if(computerChoice === "rock") {
-            computerChoice++;
-            return "Computer choose rock. You choosed scissors you lose!";
+            computerScore++;
+            console.log("Computer choose rock. You choosed scissors you lose!");
         }
         else if(computerChoice === "paper"){
             humanChoice++;
-            return "Computer choose paper. You choosed scissors you lose!";
+            console.log("Computer choose paper. You choosed scissors you lose!");
         }
     } 
 }
