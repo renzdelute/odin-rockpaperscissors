@@ -8,7 +8,7 @@ function playRound(humanChoice, computerChoice){
         if(computerChoice === "rock") return "Tie!";
         else if(computerChoice === "paper") {
             computerScore++;
-            return "Computer choose paper. You Lose!";
+            console.log("Computer choose paper. You Lose!");
         } else if (computerChoice === 'scissors') {
             humanScore++;
             console.log("Computer choose scissors. You Win!");
